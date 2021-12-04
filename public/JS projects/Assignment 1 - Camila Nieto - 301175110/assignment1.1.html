@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/bmr.jpg">
+    <style>
+        .weight{
+            left: -84px;
+            bottom: -40px;
+        }
+    </style>
+    <title>M BMR Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <header>
+    </header>
+    <img src="images/bmr.jpg" alt="BMR logo" title="" class="images"/>
+    <nav>
+        <ul>
+            <li id="page"><a href="table.html">TABLE</a></li>
+            <li id="page"><a href="assignment1.1.html">Metric BMR CALCULATOR</a></li>
+            <li id="currentpage"><a href="assignment1.2.html">IMPERIAL BMR CALCULATOR</a></li>
+         </ul>
+    </nav>
+    <article>
+        <form style="height: 1005.77px;">
+            <fieldset id="contactinfo1" style="padding-bottom: 0px;margin-bottom: 0px;top: 25px;height: 110.067px;top: -30px;">
+                <legend><span><h4>GENDER: &#160; &#160; &nbsp;&#160; &nbsp;&#160; &nbsp;&#160; &nbsp;&#160; &nbsp;&#160; &nbsp;&#160; &nbsp; &nbsp;AGE:</h4></span></legend>
+                <select id="gender" name="gender" style="border-left-style: solid;margin-left: 100px;margin-bottom: 0px;top: -50px;left: 40px;">
+                  <!--<p>GENDER</p>-->
+                  <option value="01">MALE</option>
+                  <option value="02">FEMALE</option>
+               </select>
+
+               <input type="number" min="1" id="age" value="1" style="margin-left: 0px;left: -110px;top: -83px;margin-top: 0px;"/>
+               <label for="age">
+                   <!--<p>AGE</p>-->
+               </label>
+          </fieldset>
+
+        <fieldset style="padding-top: 0px;padding-bottom: 0px;margin-top: 0px;margin-bottom: 0PX;margin-left: 7px;margin-right: 7px;top: -55px;">
+               <legend><span><h4>YOUR HEIGHT</h4></span></legend>
+
+               <input type="number" min="1" id="inches" value="0" />
+               <label for="inches">
+                  <p>INCHES:</p>
+               </label>
+
+               <input type="number" min="1" id="cm" value="0" />
+               <label for="cm">
+                  <p>CENTIMETER:</p>
+               </label>
+
+        </fieldset>
+
+         <fieldset style="top: -85px;">
+               <legend><span><h4>YOUR WEIGHT</h4></span></legend>
+                  
+               <input type="number" min="1" id="pounds" value="0" />
+               <label for="pounds">
+                  <p>POUNDS: </p>
+               </label>
+
+               <input type="number" min="1" id="kg" value="0" />
+               <label for="kg">
+                  <p>KILOGRAM:</p>
+               </label>
+
+        </fieldset>
+
+            <fieldset style="top: -85px; padding-top: 20px;">
+                <legend><span>Select your activity level: </span></legend>
+                <input type="radio" id="sedentary" name="activity"/>
+                <label for="sedentary">
+                   <p>I am sedentary (little or no exercise)</p>
+                </label>
+ 
+                <input type="radio" id="lightly" name="activity"/>
+                <label for="lightly">
+                   <p>I am lightly active (light exercise or sports 1-3 days per weeek)</p>
+                </label>
+
+                <input type="radio" id="moderate" name="activity"/>
+                <label for="moderate">
+                   <p>I am moderately active (moderate exercise or sports 3-5 days per week)</p>
+                </label>
+ 
+                <input type="radio" id="very" name="activity"/>
+                <label for="very">
+                   <p>I am very active (hard exercise or sports 6-7 days per week)</p>
+                </label>
+
+                <input type="radio" id="super" name="activity"/>
+                <label for="super">
+                   <p>I am super active (very hard exercise or sports and a physical job or 2x training)</p>
+                </label>
+
+            </fieldset id="contactinfo2">
+            <fieldset id="submitbutton" style="top: -70px;width: 450px;left: 97px;margin-bottom: 0px;margin-right: 0px;padding-bottom: 2px;">
+                <input type="button" id="submit" value="Calculate BMR" style="left: -125px;top: 1px;"/>
+
+
+            </fieldset>
+        </form>
+        <p><span id="cValue" style="margin-left: 385px;">MEN: </span></p>
+        <p><span id="bValue" style="margin-left: 335px;">WOMEN: </span></p>
+        <p id ="result"></p>
+    </article>
+    <footer></footer>
+    <script src="assignment1.1.js"></script>
+</body>

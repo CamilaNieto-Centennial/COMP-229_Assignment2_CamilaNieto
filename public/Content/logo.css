@@ -1,0 +1,29 @@
+.one
+{
+    width: 50px;
+    height: 86.6px;
+    margin: 0 auto;
+    border-top: 10px solid rgb(158, 2, 2);
+    border-bottom: 10px solid rgb(158, 2, 2);
+}
+.two {
+    position: absolute;
+    width: 50px;     
+    height: 86.6px;
+    left: 25px;
+    top: 0;
+    transform: translate(-50%,-50%);
+    transform: rotate(60deg);
+    border-bottom: 10px solid rgb(158, 2, 2);
+}
+.three {
+    position: absolute;
+    width: 50px;
+    height: 86.6px;
+    left: 25px;
+    top: 0;
+    transform: translate(-50%,-50%);
+    transform: rotate(300deg);
+    border-top: 10px solid rgb(158, 2, 2);
+    border-bottom: 10px solid rgb(158, 2, 2);
+}

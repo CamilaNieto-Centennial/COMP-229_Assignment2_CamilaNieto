@@ -1,0 +1,54 @@
+ <!--Content inside contact.ejs-->
+  <%- include ../partials/header.ejs %>
+ <div class="container">
+ <h1><%= title %> </h1>
+  
+<!--Form-->
+<form>
+<!--First Name--><!--Last Name-->
+<div class="row g-3">
+  <div id="fname" class="col">
+    <input type="text" class="form-control" placeholder="First name" aria-label="First name" required="required">
+  </div>
+  <div id="lname" class="col">
+    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" required="required">
+  </div>
+</div>
+
+
+<!--Contact Number-->
+<div id="phone" class="col">
+<input type="number" class="form-control" placeholder="Phone number" required="required" />
+</div>
+ <!--Email-->
+  <div id="email" class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required="required">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+
+  <!--Text Area-->
+  <div id="message" class="form-floating">
+  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required="required"></textarea>
+  <label for="floatingTextarea2">Comments</label>
+</div>
+  
+
+  <!--Submit button>-->
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<!--Form-->
+
+<br>
+  <p>If you want to know more information about these webpages, please feel free to email me at:
+  </p>
+  <a href="mailto:cnietomo@my.centennialcollege.ca"><strong>Camila Nieto</strong></a>
+
+
+  <script src="./Scripts/form.js"></script>
+<br>
+  <br>
+  <br>
+   <br>
+  </div>
+<%- include ../partials/footer.ejs %>

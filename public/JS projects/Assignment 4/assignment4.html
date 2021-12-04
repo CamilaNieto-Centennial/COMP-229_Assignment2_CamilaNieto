@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=page-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="assignment4.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet" type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com" type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" type='text/css'>
+    <script src="assignment4.js"></script>
+</head>
+
+<body>
+    <body onload="document.registration.FName.focus();">
+    <div class="container">
+        <header style="margin-left: 40px;">
+            <img src="images/register.png" alt="Subscribe logo" title="" />
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#"> Home Page</a></li>
+                <li><a href="#">Content</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <article>
+        <h2>Member Registration</h2>
+        <div></div>
+        <form name='registration'>
+            <fieldset id="entry1" class="text">
+                <legend>Please complete all the fields below:</legend>
+                <label for="FName">First Name</label>
+                <input id="FName" name="FName" type="text" required="required" />
+                <label for="LName">Last Name</label>
+                <input id="LName" name="LName" type="text" required="required" />
+                <label for="Street">Address</label>
+                <input id="Street" name="Street" type="text" required="required" />
+                <label for="city">City</label>
+                <input id="city" name="city" type="text" required="required" />
+                <label for="postal">Postal Code</label>
+                <input id="postal" name="postal" type="text" required="required" />
+                <label for="userid">Province: </label>
+                <select name="province" required="required">
+                    <option selected="" value="Default">(Please select a Province)</option>
+                    <option value="QC">QC</option>
+                    <option value="ON">ON</option>
+                    <option value="MN">MN</option>
+                    <option value="SK">SK</option>
+                    <option value="AB">AB</option>
+                    <option value="BC">BC</option>
+                </select>
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" min="18" required="required" />
+                <label for="password">Password</label>
+                <input id="password" name="password" type="text" required="required" />
+                <label for="confirm">Confirm</label>
+                <input id="confirm" name="confirm" type="text" required="required" />
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" required="required" />
+                <div></div>
+            </fieldset>
+            <div id="buttonContainer">
+                <input id="orderButton" type="submit" name="submit" value="Register Now" onClick="return formValidation();" />
+                <input id="resetButton" type="reset" name="reset" value="Clear Form" onClick="return confirmreset()" />
+            </div>
+        </form>
+    </article>
+    <footer>Camila Nieto Moya <span>&bull;</span> ID: 301175110</footer>
+</body>
+
+</html>
